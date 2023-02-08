@@ -1,0 +1,8 @@
+@import '../../mixins.scss';
+
+.back-bread {
+    grid-area: back-bread;
+    background-color: rgb(53, 189, 15);
+    @include flex-center;
+    justify-content: flex-start;
+}

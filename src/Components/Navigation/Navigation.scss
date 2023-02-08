@@ -1,0 +1,21 @@
+.navigation {
+    background-color: rgb(0, 255, 42);
+
+    grid-area: navigation;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
+    //padding-left: 10%;
+    //margin-left: 8rem;
+
+    &::before {
+        content: "";
+    }
+
+    &::after {
+        content: "";
+    }
+
+
+
+}
