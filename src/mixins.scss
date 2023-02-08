@@ -16,7 +16,7 @@
 }
 
 .quote-page-card-box-header {
-    height: 3rem;
+    //min-height: 5vh;
     width: 100%;
     background-color: rgb(43, 226, 89);
     border-radius: 10px 10px 0 0; ///!!
@@ -24,9 +24,10 @@
     display: flex;
     align-items: center;
     padding-top: 0.4em;
-
+    flex: 0 1 4rem;
     &>h5 {
         color: black; //!!! 
+        font-size: small;
 
     }
 
@@ -35,6 +36,7 @@
 .quote-page-card-box-content {
     border-radius: 0 0 10px 10px; ///!!
     background-color: crimson;
+    flex: 1 0 auto;
     width: 100%;
     padding: 1rem;
 }

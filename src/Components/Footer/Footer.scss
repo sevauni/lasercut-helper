@@ -1,1 +1,6 @@
 @import '../../mixins.scss';
+
+footer {
+    grid-area: footer;
+    background-color: rgb(34, 0, 255);
+}

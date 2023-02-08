@@ -1,1 +1,6 @@
 @import '../../mixins.scss';
+
+.order-steps {
+    grid-area: order-steps;
+    background-color: rgb(225, 255, 0);
+}

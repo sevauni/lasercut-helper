@@ -1,1 +1,7 @@
 @import '../../mixins.scss';
+
+.current-items {
+    grid-area: current-items;
+    background-color: rgb(74, 1, 1);
+    height: 600px;
+}
