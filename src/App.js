@@ -1,7 +1,6 @@
-//import { useMediaQuery } from "react-responsive";
-//import { MediaQueryContext } from './Contextes/Context';
-//import { useMediaQuery } from 'react-responsive';
-
+import { useMediaQuery } from "react-responsive";
+import MediaQuery from 'react-responsive'
+import { MediaQueryContext } from './Contextes/Context';
 
 import './App.scss';
 
@@ -12,21 +11,29 @@ import OrderSteps from './Components/OrderSteps/OrderSteps';
 import UploadNew from './Components/UploadNew/UploadNew';
 import CurrentItems from './Components/CurrentItems/CurrentItems';
 import Footer from './Components/Footer/Footer';
+import FooterMobile from "./Components/FooterMobile/FooterMobile";
 
 function App() {
 
+  const isMobile = useMediaQuery({
+    query: '(min-width: 991px)'
+  })
+
+
+  //console.log(isMobile);
+
   return (
-    <div className="website-container">
-      <Navigation />
-      <BreadCrumbs />
-      <NoteBox />
-      <OrderSteps></OrderSteps>
-      <UploadNew></UploadNew>
-      <CurrentItems></CurrentItems>
-      <Footer></Footer>
-
-
-    </div>
+    <MediaQueryContext.Provider value={isMobile}>
+      <div className={isMobile ? "website-container" : "website-container_mobile"}>
+        <Navigation />
+        <BreadCrumbs />
+        <NoteBox />
+        <OrderSteps></OrderSteps>
+        {isMobile ? <Footer /> : <FooterMobile />}
+        <UploadNew></UploadNew>
+        <CurrentItems></CurrentItems>
+      </div>
+    </MediaQueryContext.Provider>
 
   );
 }

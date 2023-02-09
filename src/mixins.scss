@@ -1,3 +1,7 @@
+$border-radius: 6px;
+
+
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -6,37 +10,59 @@
 
 
 
+@mixin button-link {
+    margin-left: 1em;
+    background: none;
+    border: none;
+    padding: 0;
+    /*optional*/
+    // font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    //color: #069;
+    cursor: pointer;
+
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
 .quote-page-card-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    border-radius: 10px;
-}
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: $border-radius;
 
-.quote-page-card-box-header {
-    //min-height: 5vh;
-    width: 100%;
-    background-color: rgb(43, 226, 89);
-    border-radius: 10px 10px 0 0; ///!!
-    padding: 0 1em;
-    display: flex;
-    align-items: center;
-    padding-top: 0.4em;
-    flex: 0 1 4rem;
-    &>h5 {
-        color: black; //!!! 
-        font-size: small;
+    &>div:first-child {
+        //min-height: 5vh;
+        padding: 0;
+        width: 100%;
+        background-color: rgb(43, 226, 89);
+        border-radius: $border-radius $border-radius 0 0; ///!!
+        padding: 0 1em;
+        display: flex;
+        align-items: center;
+        padding-top: 0.4em;
+        flex: 0 0 3rem;
+
+        &>h5 {
+            color: black; //!!! 
+            font-size: small;
+
+        }
 
     }
 
-}
+    &>div:last-child {
+        border-radius: 0 0 $border-radius $border-radius; ///!!
+        background-color: crimson;
+        flex: 1 0 auto;
+        width: 100%;
+        //padding: 1rem;
+    }
 
-.quote-page-card-box-content {
-    border-radius: 0 0 10px 10px; ///!!
-    background-color: crimson;
-    flex: 1 0 auto;
-    width: 100%;
-    padding: 1rem;
+
 }

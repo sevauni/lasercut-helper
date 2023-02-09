@@ -1,0 +1,9 @@
+@import '../../mixins.scss';
+
+
+footer.footer-mobile {
+    position: sticky;
+    bottom: 0;
+    background-color: yellow;
+    height: 3rem;
+}

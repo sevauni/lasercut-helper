@@ -1,8 +1,9 @@
-import './BreadCrumbs.scss'
+import './OrderCards.scss'
 import React from 'react'
 
-export default function BreadCrumbs() {
+export default function BreadCrumbs(props) {
     return (
-        <div>BreadCrumbs</div>
+        <div>{props.children}</div>
+        
     )
 }

@@ -3,6 +3,11 @@ import React from 'react'
 
 export default function UploadNew() {
     return (
-        <div className="upload-new-item"></div>
+        <section className="upload-new-item quote-page-card-box">
+            <div>
+                <h5>UPLOAD BLOCK</h5>
+            </div>
+            <div> content</div>
+        </section>
     )
 }
