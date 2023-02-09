@@ -28,10 +28,11 @@ function App() {
         <Navigation />
         <BreadCrumbs />
         <NoteBox />
-        <OrderSteps></OrderSteps>
-        {isMobile ? <Footer /> : <FooterMobile />}
+         <OrderSteps></OrderSteps>
+
         <UploadNew></UploadNew>
         <CurrentItems></CurrentItems>
+        {isMobile ? <Footer /> : <FooterMobile />}
       </div>
     </MediaQueryContext.Provider>
 
