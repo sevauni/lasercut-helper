@@ -1,22 +1,23 @@
 import './ItemCard.scss'
 import Form from 'react-bootstrap/Form';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import PreviewImg from '../../Assets/Imgs/part-image.png';
+import { MediaQueryContext } from '../../Contextes/Context';
 
 
 export default function ItemCard(props) {
     const [itemNameCollapsed, setNameCollapsed] = useState(false)
-
+    const isMobile = useContext(MediaQueryContext);
 
     return (
-        <div className="item-card">
-            <div className='item-card__header'>
-                <Form.Check aria-label="option 1" />
+        <div className={isMobile ? "item-card " : "item-card item-card_mobile"}>
+            <div className='item-card__header_left'>
+                <input type="checkbox" name="asd" id="asdasd" />
                 {!itemNameCollapsed
                     ?
                     <>
-                        <button onClick={() => setNameCollapsed(true)}>metal_part_name</button>
+                        <button className='item-card__header_left_name' onClick={() => setNameCollapsed(true)}>30. Metal_part_name</button>
 
                         <button onClick={() => setNameCollapsed(true)}>Edit</button>
                     </>
@@ -27,14 +28,14 @@ export default function ItemCard(props) {
                             onBlur={() => setNameCollapsed(false)}
                             size="sm"
                             type="text"
-                            placeholder="1"
+                            
 
                         />
                         <button onClick={() => setNameCollapsed(false)}>Save</button>
                     </>
                 }
             </div>
-            <div className='item-card__header'>
+            <div className='item-card__header_right'>
                 <h6>Qty:</h6>
                 <Form.Control
                     type="number"
@@ -66,7 +67,6 @@ export default function ItemCard(props) {
                 <button>Duplicate</button>
                 <button>Remove</button>
             </div>
-
         </div>
     )
 }

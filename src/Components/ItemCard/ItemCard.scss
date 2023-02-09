@@ -4,11 +4,7 @@
 
 
 
-// }
-
-
 .item-card {
-    background-color: rgb(116, 7, 219);
     display: grid;
     grid-template-columns: 20% 1fr 30%;
     grid-template-rows: 2.5rem 7rem 2rem;
@@ -18,9 +14,29 @@
         "image properties result"
         ". edit add-buttons";
     width: 100%;
-
     border-top: 1px black solid;
     padding: 0 1rem;
+
+    &:not(:first-of-type) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+
+    &_mobile {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.5rem 2rem 7rem 7rem 7rem 2rem 2rem;
+        gap: 0.5em 0.5em;
+        grid-template-areas:
+            "header-left"
+            "header-right"
+            "image"
+            "properties"
+            "result"
+            "edit"
+            "add-buttons";
+    }
 
     //header
 
@@ -28,51 +44,44 @@
     input[type=number]::-webkit-outer-spin-button {
         opacity: 1;
     }
- 
-    &:last-of-type{
+
+    &:last-of-type {
         border-radius: inherit;
     }
 
-
-
-    &__header:nth-of-type(1) {
+    &__header_left {
         grid-area: header-left;
+
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-
-        width: 100%;
         justify-content: flex-start;
-        background-color: red;
+        width: 100%;
 
-        padding: 0.1rem;
-
-        &>input {
-            flex: 0 1 70%;
-            text-align: left;
+        &>* {
             margin-left: 1rem;
         }
 
-        &>h6 {
-            margin-left: 1rem;
-            margin-top: 0.4em;
+        &>input[type=text] {
+            flex: 0 1 70%;
+            text-align: left;
         }
 
         &>button {
             @include button-link;
         }
 
+        &_name{
+            font-weight: bold;
+        }
     }
 
-    &__header:nth-of-type(2) {
+    &__header_right {
         grid-area: header-right;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
-        background-color: rgb(96, 4, 243);
-
-
+ 
 
         &>h6 {
             margin-left: 1rem;
@@ -93,22 +102,19 @@
 
     &__image {
         grid-area: image;
-        background-color: white;
         text-align: center;
         height: 100%;
         width: 100%;
 
-
-
         &>img {
-            border: 1px solid black; ///!!
+            border: 1px solid var( --dark);
+            border-radius: 3px;
         }
     }
 
     &__properties {
         display: flex;
         justify-content: space-around;
-
         flex-direction: column;
         grid-area: properties;
 
@@ -116,16 +122,12 @@
         &>button {
             @include button-link;
             font-size: 0.8em;
-
             text-align: left;
         }
     }
 
     &__result {
-
-
         grid-area: result;
-        background-color: darkorange;
         @include flex-center;
 
         &>button {
@@ -136,7 +138,7 @@
             border-radius: $border-radius;
 
             &>span {
-                font-size: 0.8em;
+                font-size: smaller;
                 display: block;
             }
         }
@@ -145,30 +147,26 @@
 
 
     &__edit {
-
-
         grid-area: edit;
-        background-color: aqua;
         display: flex;
         align-items: center;
 
         &>button {
             @include button-link;
         }
-
     }
-
-
-
-
 
     &__add-buttons {
         grid-area: add-buttons;
-        background-color: rgb(24, 181, 61);
         display: flex;
-
+        align-items: center;
+        justify-content: center;
+        padding-right: 1rem;
+        
         &>button {
+
             @include button-link;
+            margin-left: 1rem;
         }
     }
 }

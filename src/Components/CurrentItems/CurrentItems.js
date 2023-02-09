@@ -12,9 +12,11 @@ export default function CurrentItems() {
                 <h5>CURRENT ITEMS</h5>
             </div>
             <div>
+            <ItemCard/>
+            <ItemCard/>
+                {/* <ItemCard></ItemCard>
                 <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
-                <ItemCard></ItemCard>
+                <ItemCard></ItemCard> */}
             </div>
         </main>
     )

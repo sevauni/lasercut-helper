@@ -4,7 +4,8 @@
 
 .notes {
     grid-area: notes;
-    background-color: rgb(206, 23, 212);
+
+    &>div {
+        padding: 1rem;
+    }
 }
-
-

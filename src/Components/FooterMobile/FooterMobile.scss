@@ -1,9 +1,11 @@
 @import '../../mixins.scss';
 
 
-footer.footer-mobile {
+.footer-mobile {
+    grid-area: footer;
     position: sticky;
-    bottom: 0;
     background-color: yellow;
-    height:6rem;
+    bottom: 0;
+    height:4rem;
+    z-index: 5;
 }

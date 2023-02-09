@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive'
 import { MediaQueryContext } from './Contextes/Context';
 
 import './App.scss';
+import './custom-theme.css';
 
 import Navigation from "./Components/Navigation/Navigation";
 import BreadCrumbs from './Components/BreadCrumbs/BreadCrumbs';
@@ -28,8 +29,7 @@ function App() {
         <Navigation />
         <BreadCrumbs />
         <NoteBox />
-         <OrderSteps></OrderSteps>
-
+        <OrderSteps></OrderSteps>
         <UploadNew></UploadNew>
         <CurrentItems></CurrentItems>
         {isMobile ? <Footer /> : <FooterMobile />}

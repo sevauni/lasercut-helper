@@ -5,12 +5,7 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "src/index.css": true,
-        "src/index.js": true
+        "**/Thumbs.db": true
     },
-    "hide-files.files": [
-        "src/index.css",
-        "src/index.js"
-    ]
+    "hide-files.files": []
 }

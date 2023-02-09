@@ -23,12 +23,12 @@ function OrderStepsQuoteEditing() {
             <span>Shipping cost:S</span>
             <span className='order-steps__quote-edit-step-1_right'>1337</span>
             <div className='order-steps__quote-edit-step-1__promo '>
-
+            Apply promo code
             </div>
             <h5>Order Summary:</h5>
             <span className='order-steps__quote-edit-step-1_right'>excl. VAT€ 78.24</span>
             <button>Procced</button>
-            <button>Procced</button>
+            <button>Learn more about order processing</button>
 
         </div>
     )

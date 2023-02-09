@@ -40,7 +40,7 @@ $border-radius: 6px;
         //min-height: 5vh;
         padding: 0;
         width: 100%;
-        background-color: rgb(43, 226, 89);
+        background-color: var(--success);
         border-radius: $border-radius $border-radius 0 0; ///!!
         padding: 0 1em;
         display: flex;
@@ -58,7 +58,6 @@ $border-radius: 6px;
 
     &>div:last-child {
         border-radius: 0 0 $border-radius $border-radius; ///!!
-        background-color: crimson;
         flex: 1 0 auto;
         width: 100%;
         //padding: 1rem;
