@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import Logo from '../../Assets/Imgs/logo.svg';
 
 
 
@@ -17,8 +18,8 @@ export default function Navigation() {
             <Container fluid>
                 <Navbar.Brand href="#home">
                     <img
-                        alt=""
-                        src="/logo.svg"
+                        alt="Laser Cut"
+                        src={Logo}
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
