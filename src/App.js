@@ -10,8 +10,8 @@ import NoteBox from './Components/NoteBox/NoteBox';
 import OrderSteps from './Components/OrderSteps/OrderSteps';
 //import UploadNew from './Components/UploadNew/UploadNew';
 import CurrentItems from './Components/CurrentItems/CurrentItems';
-import Footer from './Components/Footer/Footer';
-import FooterMobile from "./Components/FooterMobile/FooterMobile";
+//import Footer from './Components/Footer/Footer';
+//import FooterMobile from "./Components/FooterMobile/FooterMobile";
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
         <OrderSteps></OrderSteps>
         {/* <UploadNew></UploadNew> */}
         <CurrentItems></CurrentItems>
-        {isMobile ? <Footer /> : <FooterMobile />}
+
       </div>
     </MediaQueryContext.Provider>
 
