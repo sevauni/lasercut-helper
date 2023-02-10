@@ -1,5 +1,6 @@
 import './OrderSteps.scss'
 import Accordion from 'react-bootstrap/Accordion';
+import Button from 'react-bootstrap/Button';
 
 const test = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -27,7 +28,7 @@ function OrderStepsQuoteEditing() {
             </div>
             <h5>Order Summary:</h5>
             <span className='order-steps__quote-edit-step-1_right'>excl. VAT€ 78.24</span>
-            <button>Procced</button>
+            <Button variant="primary">Primary</Button>
             <button>Learn more about order processing</button>
 
         </div>
@@ -42,7 +43,7 @@ export default function OrderSteps() {
     return (
         <aside className="order-steps order-steps__card-holder quote-page-card-box">
             <div>
-                <h5>ORDERSTEPS</h5>
+                <h5>Process</h5>
             </div>
             <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
@@ -51,19 +52,19 @@ export default function OrderSteps() {
                         {OrderStepsQuoteEditing()}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="1">
+                <Accordion.Item  eventKey="1">
                     <Accordion.Header>Step 2 - Certifications (optional)</Accordion.Header>
                     <Accordion.Body>
                         {test}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="3">
+                <Accordion.Item  eventKey="3">
                     <Accordion.Header>Step 3 - Shipping</Accordion.Header>
                     <Accordion.Body>
                         {test}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="4">
+                <Accordion.Item  eventKey="4">
                     <Accordion.Header>Step 4 - Review & Payment</Accordion.Header>
                     <Accordion.Body>
                         {test}

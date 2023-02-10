@@ -4,7 +4,9 @@
 .footer-mobile {
     grid-area: footer;
     position: sticky;
-    background-color: yellow;
+    background-color: var(--primary);
+    opacity: 0.98;
+
     bottom: 0;
     height:4rem;
     z-index: 5;

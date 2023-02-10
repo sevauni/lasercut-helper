@@ -9,7 +9,7 @@ import { MediaQueryContext } from '../../Contextes/Context';
 export default function ItemCard(props) {
     const [itemNameCollapsed, setNameCollapsed] = useState(false)
     const isMobile = useContext(MediaQueryContext);
-
+ 
     return (
         <div className={isMobile ? "item-card " : "item-card item-card_mobile"}>
             <div className='item-card__header_left'>

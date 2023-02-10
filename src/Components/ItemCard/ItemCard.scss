@@ -14,8 +14,9 @@
         "image properties result"
         ". edit add-buttons";
     width: 100%;
-    border-top: 1px black solid;
+    //border-top: 1px $secondary solid;
     padding: 0 1rem;
+    padding-top: 1rem;
 
     &:not(:first-of-type) {
         margin-top: 1rem;
@@ -107,7 +108,7 @@
         width: 100%;
 
         &>img {
-            border: 1px solid var( --dark);
+            border: 1px solid $addiotional-accent-3;
             border-radius: 3px;
         }
     }
@@ -129,12 +130,16 @@
     &__result {
         grid-area: result;
         @include flex-center;
+        
 
         &>button {
+            @include button-link;
             height: 100%;
             aspect-ratio: 1.2/1;
             @include flex-center;
             flex-direction: column;
+            border: 1px solid $addiotional-accent;
+            //background-color: var(--info);
             border-radius: $border-radius;
 
             &>span {

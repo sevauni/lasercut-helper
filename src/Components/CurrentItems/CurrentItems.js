@@ -9,7 +9,7 @@ export default function CurrentItems() {
     return (
         <main className="current-items quote-page-card-box">
             <div>
-                <h5>CURRENT ITEMS</h5>
+                <h5>Order Items</h5>
             </div>
             <div>
             <ItemCard/>

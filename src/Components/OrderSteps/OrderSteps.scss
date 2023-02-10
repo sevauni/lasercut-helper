@@ -2,7 +2,11 @@
 
 .order-steps {
     grid-area: order-steps;
-  
+
+    .accordion-button:focus {
+
+        box-shadow: none !important;
+    }
 
     &__card-holder {
         height: fit-content;
@@ -23,7 +27,7 @@
         //     justify-content: end;
         // }
 
-        &>span{
+        &>span {
             display: block;
         }
 
@@ -41,8 +45,8 @@
             display: block;
         }
 
-        
-        
+
+
 
         &__promo {
             background-color: var(--light);
@@ -50,14 +54,14 @@
             grid-row: 5;
         }
 
-        &>button:first-of-type{
-            background-color: var(--success);
+        &>button:first-of-type {
+
             grid-column: 1/-1;
             grid-row: 7;
-            width: 100%;
-            height: 3rem;
+
         }
-        &>button:last-of-type{
+
+        &>button:last-of-type {
 
             grid-column: 1/-1;
             grid-row: 8;

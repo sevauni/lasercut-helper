@@ -1,13 +1,14 @@
 
 
 
+
 .website-container {
     //background-color: maroon;
     display: grid;
     //min-height: 100vh;
     height: 100%;
     grid-template-columns: 5% 2fr 1fr 5%;
-    grid-template-rows: auto 3em 6em auto 10em 10%;
+    grid-template-rows: auto 3rem 6rem auto 15rem 10rem;
     gap: 1.4em 2em;
     grid-auto-flow: row;
     align-items: stretch;
@@ -34,4 +35,14 @@
             "footer footer footer";
     }
 
+}
+
+
+
+@import './custom.scss';
+@import "~bootstrap/scss/bootstrap";
+
+
+button {
+color: #192435;
 }
