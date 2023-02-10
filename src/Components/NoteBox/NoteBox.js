@@ -5,9 +5,9 @@ export default function NoteBox() {
     return (
         <section className="notes quote-page-card-box">
             <div >
-                <h5>Notes</h5>
+                <h5>Quote E-521928-492287</h5>
             </div>
-            <div> content</div>
+            <div>Laser cutting</div>
         </section>
     )
 }

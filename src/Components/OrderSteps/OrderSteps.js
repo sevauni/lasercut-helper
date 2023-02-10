@@ -18,16 +18,16 @@ function OrderStepsQuoteEditing() {
         <div className='order-steps__quote-edit-step-1'>
             <h5>Order Summary:</h5>
             <span>Shipment date:</span>
-            <span className='order-steps__quote-edit-step-1_right'>1337:</span>
+            <span className='order-steps__quote-edit-step-1_right'><b>02.05.2023</b></span>
             <span>2 parts / 6 pcs:</span>
-            <span className='order-steps__quote-edit-step-1_right'>1337</span>
+            <span className='order-steps__quote-edit-step-1_right'><b>50$</b></span>
             <span>Shipping cost:S</span>
-            <span className='order-steps__quote-edit-step-1_right'>1337</span>
+            <span className='order-steps__quote-edit-step-1_right'><b>13$</b></span>
             <div className='order-steps__quote-edit-step-1__promo '>
-            Apply promo code
+                Apply promo code:
             </div>
-            <h5>Order Summary:</h5>
-            <span className='order-steps__quote-edit-step-1_right'>excl. VAT€ 78.24</span>
+            <h5> </h5>
+            <span className='order-steps__quote-edit-step-1_right'><b>excl. VAT 63$</b></span>
             <Button variant="primary">Primary</Button>
             <button>Learn more about order processing</button>
 
@@ -45,26 +45,26 @@ export default function OrderSteps() {
             <div>
                 <h5>Process</h5>
             </div>
-            <Accordion defaultActiveKey="0" flush>
-                <Accordion.Item eventKey="0">
-                    <Accordion.Header>Step 1 - Quote editing</Accordion.Header>
+            <Accordion defaultActiveKey="0" activeKey="0" flush>
+                <Accordion.Item alwaysOpen eventKey="0">
+                    <Accordion.Header >Step 1 - Quote editing</Accordion.Header>
                     <Accordion.Body>
                         {OrderStepsQuoteEditing()}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item  eventKey="1">
+                <Accordion.Item eventKey="1">
                     <Accordion.Header>Step 2 - Certifications (optional)</Accordion.Header>
                     <Accordion.Body>
                         {test}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item  eventKey="3">
+                <Accordion.Item eventKey="3">
                     <Accordion.Header>Step 3 - Shipping</Accordion.Header>
                     <Accordion.Body>
                         {test}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item  eventKey="4">
+                <Accordion.Item eventKey="4">
                     <Accordion.Header>Step 4 - Review & Payment</Accordion.Header>
                     <Accordion.Body>
                         {test}
