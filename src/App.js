@@ -8,7 +8,7 @@ import Navigation from "./Components/Navigation/Navigation";
 import BreadCrumbs from './Components/BreadCrumbs/BreadCrumbs';
 import NoteBox from './Components/NoteBox/NoteBox';
 import OrderSteps from './Components/OrderSteps/OrderSteps';
-import UploadNew from './Components/UploadNew/UploadNew';
+//import UploadNew from './Components/UploadNew/UploadNew';
 import CurrentItems from './Components/CurrentItems/CurrentItems';
 import Footer from './Components/Footer/Footer';
 import FooterMobile from "./Components/FooterMobile/FooterMobile";

@@ -28,7 +28,7 @@ function OrderStepsQuoteEditing() {
             </div>
             <h5> </h5>
             <span className='order-steps__quote-edit-step-1_right'><b>excl. VAT 63$</b></span>
-            <Button variant="primary">Primary</Button>
+            <Button variant="primary">Continue</Button>
             <button>Learn more about order processing</button>
 
         </div>
